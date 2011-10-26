@@ -1,0 +1,3 @@
+services:
+    problematic_achievement.award_processor:
+        class: Problematic\AchievementBundle\Processor\DeferredAwardProcessor

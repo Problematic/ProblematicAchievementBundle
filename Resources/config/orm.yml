@@ -1,0 +1,11 @@
+services:
+    problematic_achievement.manager.activity:
+        class: Problematic\AchievementBundle\Entity\ActivityManager
+        arguments:
+            em: "@doctrine.orm.entity_manager"
+            class: Acme\AchievementBundle\Entity\Activity
+    problematic_achievement.manager.action:
+        class: Problematic\AchievementBundle\Entity\ActionManager
+        arguments:
+            em: "@doctrine.orm.entity_manager"
+            class: Acme\AchievementBundle\Entity\Action

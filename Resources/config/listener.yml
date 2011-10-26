@@ -1,0 +1,8 @@
+services:
+    problematic_achievement.listener.deferred:
+        class: Problematic\AchievementBundle\EventListener\DeferredAchievementListener
+        arguments:
+            activityManager: "@problematic_achievement.manager.activity"
+            actionManager: "@problematic_achievement.manager.action"
+        tags:
+            - { name: kernel.event_listener, event: problematic_achievement.activity, method: onAchievementActivity }
